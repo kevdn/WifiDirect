@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Container nhỏ gọn cho nội dung -->
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/super_gray"
+        android:padding="4dp">
+
+        <!-- TextView để hiển thị username -->
+        <TextView
+            android:id="@+id/textViewUsernameIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="0dp"
+            android:text="From: User"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <!-- Nút Play Audio -->
+
+        <!-- TextView để hiển thị timestamp -->
+        <Button
+            android:id="@+id/buttonPlayIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewUsernameIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:background="@color/super_gray"
+            android:padding="8dp"
+            android:text="Play Audio"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPlayIn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="3dp"
+            android:padding="0dp"
+            android:text="00:16"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</LinearLayout>
